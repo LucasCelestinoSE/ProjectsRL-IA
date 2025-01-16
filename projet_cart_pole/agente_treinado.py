@@ -6,7 +6,10 @@ import keyboard
 import sys
 from gymnasium.wrappers import RecordVideo
 envId = "CartPole-v1"
-model_path ="dqn_cartpole_midStay_model.zip"
+model_path =["modelos/CartPole_50k_timesteps.zip", 
+             "modelos/CartPole_100K_timesteps.zip", 
+             "modelos/CartPole_600k_timesteps.zip",
+             "modelos/CartPole_mid_wrapper.zip"]
 # Cria o ambiente
 env = gym.make(envId, render_mode="human")  
 
@@ -17,7 +20,7 @@ env = gym.make(envId, render_mode="human")
 # Coloque o parametro render_mode = " rgb_array"
 
 # Carrega o modelo treinado
-model = DQN.load(model_path)
+model = DQN.load(model_path[3])
 # Reseta o ambiente
 obs = env.reset()
 if isinstance(obs, tuple):
@@ -42,8 +45,9 @@ while not terminou:
     # Adiciona um pequeno atraso para visualizar melhor
     time.sleep(0.01)
     
+# Aguarda a entrada do usuário para fechar a janela
+input("Pressione Enter para fechar a janela...")
 
-# Fecha o ambiente
 env.close()
 
 # Imprime a recompensa total

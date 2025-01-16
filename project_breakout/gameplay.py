@@ -14,7 +14,7 @@ env = DummyVecEnv([lambda: env])
 env = VecFrameStack(env, n_stack=4)
 
 # Load the model
-checkpoint = "ppo-BreakoutNoFrameskip-v4.zip"
+checkpoint = "breakoutmodel.zip"
 
 custom_objects = {
     "learning_rate": 0.0,

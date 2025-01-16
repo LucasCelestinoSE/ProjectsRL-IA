@@ -14,7 +14,7 @@ env = gym.make('CartPole-v1')
 # Cria o modelo DQN com a política MlpPolicy
 model = DQN(policy=MlpPolicy,
              env=env,
-             gamma=0.99,
+             gamma=0.1,
              learning_rate=0.0005,
              buffer_size=5000,
              exploration_fraction=0.1,
@@ -25,8 +25,8 @@ model = DQN(policy=MlpPolicy,
              verbose=1)
 
 # Treina o modelo
-model.learn(total_timesteps=600000, log_interval=20)
+model.learn(total_timesteps=100000, log_interval=20)
 
 # Salva o modelo treinado
-model.save("dqn_cartpole_model")
+model.save("dqn_cartpole_model_low_gamma")
 
