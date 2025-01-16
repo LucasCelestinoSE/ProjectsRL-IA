@@ -14,14 +14,14 @@ env = DummyVecEnv([lambda: env])
 env = VecFrameStack(env, n_stack=4)
 
 # Load the model
-checkpoint = "breakoutmodel.zip"
+checkpoint = ["breakoutmodel.zip", "ppo-BreakoutNoFrameskip-v4.zip"]
 
 custom_objects = {
     "learning_rate": 0.0,
     "lr_schedule": lambda _: 0.0,
     "clip_range": lambda _: 0.0,
 }
-model = PPO.load(checkpoint, custom_objects=custom_objects)
+model = PPO.load(checkpoint[1], custom_objects=custom_objects)
 
 # Reset the environment
 obs = env.reset()
