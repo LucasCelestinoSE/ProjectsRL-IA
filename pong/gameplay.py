@@ -8,13 +8,13 @@ import ale_py
 gym.register_envs(ale_py)
 env = gym.make('Pong-ram-v4', render_mode='human')
 model_path = [
-                "logs/best_model.zip",
+                "pong/modelos/best_model.zip",
                 "modelos/800ktime_steps.zip",
               "modelos/best_model.zip"
               ]
 print(env)
 # Carrega o modelo treinado
-modelo = DQN.load(model_path[2], env=env)
+modelo = DQN.load(model_path[0], env=env)
 
 # Reseta o ambiente
 obs, info = env.reset()
