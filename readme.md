@@ -1,4 +1,4 @@
-# Reinforcement Learning Demonstrations
+# Reinforcement Learning Demonstrações
 
 Este repositório contém demonstrações de aprendizado por reforço (Reinforcement Learning), utilizando diversas ferramentas e frameworks.
 As implementações estão documentadas e disponíveis no Google Colab, para facilitar a execução e reprodução.
