@@ -1,4 +1,4 @@
-# Depedendências:
+# Dependências:
 
 * gymnasium
 * ale.py
