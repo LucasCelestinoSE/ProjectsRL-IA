@@ -27,17 +27,6 @@ Execute o seguinte comando para instalar todas as dependências:
 pip install gymnasium ale-py pygame torch box2d
 ```
 
-## Conteúdo do Repositório
-
-O repositório inclui os seguintes itens:
-
-1. **Demonstrações no Colab**
-   * Exemplos práticos de aprendizado por reforço com agentes em ambientes populares.
-   * Documentação explicativa passo a passo para facilitar o aprendizado.
-2. **Códigos Localmente Reproduzíveis**
-   * Scripts Python prontos para execução em ambientes locais, replicando as demonstrações do Colab.
-3. **Visualização de Resultados**
-   * Ferramentas para renderizar os ambientes e monitorar o desempenho dos agentes em tempo real.
 
 ## Como Executar
 
