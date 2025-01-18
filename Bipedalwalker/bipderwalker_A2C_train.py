@@ -5,16 +5,16 @@ from stable_baselines3.common.callbacks import CheckpointCallback
 from stable_baselines3.ppo import MlpPolicy
 env_id = "BipedalWalker-v3"
 
+import time
 
 
 def cria_env(nome_env, num,seed= 0):
     def _init():
-        env = gym.make(nome_env, hardcore=True)
+        env = gym.make(nome_env)
         return env
     return _init
 
-import time
-
+# AJUSTE A QUANTIDADE DE NÚCLEOS DA SUA CPU CASO QUEIRA TREINAR ! 
 num_cpu = 16
 CheckpointCallback = CheckpointCallback(save_freq=20833,save_path="logs2")
 if __name__ == '__main__':
