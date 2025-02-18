@@ -24,7 +24,7 @@ Para executar os códigos localmente, você precisará instalar as seguintes dep
 Execute o seguinte comando para instalar todas as dependências:
 
 ```bash
-pip install gymnasium ale-py pygame torch box2d stable-baselines3
+pip install gymnasium ale-py pygame torch box2d stable-baselines3 tensorboard
 ```
 
 
