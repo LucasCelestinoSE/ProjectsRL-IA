@@ -1,4 +1,4 @@
-# Reinforcement Learning Demonstrations
+# Reinforcement Learning Demonstrações
 
 Este repositório contém demonstrações de aprendizado por reforço (Reinforcement Learning), utilizando diversas ferramentas e frameworks.
 As implementações estão documentadas e disponíveis no Google Colab, para facilitar a execução e reprodução.
@@ -24,20 +24,9 @@ Para executar os códigos localmente, você precisará instalar as seguintes dep
 Execute o seguinte comando para instalar todas as dependências:
 
 ```bash
-pip install gymnasium ale-py pygame torch box2d
+pip install gymnasium ale-py pygame torch box2d stable-baselines3 tensorboard
 ```
 
-## Conteúdo do Repositório
-
-O repositório inclui os seguintes itens:
-
-1. **Demonstrações no Colab**
-   * Exemplos práticos de aprendizado por reforço com agentes em ambientes populares.
-   * Documentação explicativa passo a passo para facilitar o aprendizado.
-2. **Códigos Localmente Reproduzíveis**
-   * Scripts Python prontos para execução em ambientes locais, replicando as demonstrações do Colab.
-3. **Visualização de Resultados**
-   * Ferramentas para renderizar os ambientes e monitorar o desempenho dos agentes em tempo real.
 
 ## Como Executar
 
